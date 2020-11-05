@@ -34,3 +34,7 @@ const storage = multer.diskStorage({
 app.use(multer({storage}).single('image'));
 
 //Routes
+app.use(require('./routes'));
+
+//Arrancar Servidor
+module.exports = app;

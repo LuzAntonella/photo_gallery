@@ -3,7 +3,8 @@ const morgan = require('morgan');
 const multer = require('multer');
 const path = require('path');
 const exphbs = require('express-handlebars');
-
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
+const Handlebars = require('handlebars');
 //Initializations
 const app = express(); //es el servidor
 require('./database');
